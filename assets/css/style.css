@@ -1,3 +1,20 @@
+header, footer{
+    background-color: white;
+}
+
+header>.container{
+    height: 70px;
+}
+
+body{
+    background-color:#7FFFD4 ;
+}
+
+.main_container{
+    width: 900px;
+    margin:0 auto
+}
+
 .cell_easy_mode{
     border: 1px solid black;
     width: calc(100% / 10);
@@ -7,5 +24,11 @@
 .cell_normal_mode{
     border: 1px solid black;
     width: calc(100% / 9);
+    aspect-ratio: 1/1;
+}
+
+.cell_hard_mode{
+    border: 1px solid black;
+    width: calc(100% / 7);
     aspect-ratio: 1/1;
 }

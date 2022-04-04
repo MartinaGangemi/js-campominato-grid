@@ -15,34 +15,38 @@
 <body>
     
     <!-- header con seleziona difficoltà -->
-    <header class="container">
-        <div class=" row row-cols 2 p-3">
-            <div class="col" id="porcoddio">
-                campo minato
-            </div>
-            <div class="col">
-            
-                    <label for="difficoltà">Difficoltà</label>
-                    <select name="difficolà" id="difficoltà">
-                        <option value="facile">Facile</option>
-                        <option value="media">Media</option>
-                        <option value="difficile">Difficile</option>
-                    </select>
-                    <button id="play">play</button>
-                    
+    <header>
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col">
+                    campo minato
+                </div>
+                <div class="col">
+                
+                        <label for="difficoltà">Difficoltà</label>
+                        <select name="difficolà" id="difficoltà">
+                            <option value="facile">Facile</option>
+                            <option value="media">Media</option>
+                            <option value="difficile">Difficile</option>
+                        </select>
+                        <button id="play">play</button>
+                        
+                </div>
             </div>
         </div>
     </header>
 
     <!-- griglia -->
     <main>
-        <div class="container mt-5">
+        <div class="main_container mt-5">
             <div id="cells" class="d-flex flex-wrap"></div>
         </div>
     </main>
 
-    <footer>
-
+    <footer class="mt-5">
+        <div class="container">
+            Made with by &hearts; <a href="#">Boolean</a>
+        </div>
     </footer>
     <script src="./assets/js/main.js"></script>
 </body>
