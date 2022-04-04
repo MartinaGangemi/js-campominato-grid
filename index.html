@@ -17,20 +17,19 @@
     <!-- header con seleziona difficoltà -->
     <header>
         <div class="container">
-            <div class="row row-cols-2">
-                <div class="col">
-                    campo minato
+            <div class="row row-cols-2 align-items-center">
+                <div class="col d-flex align-items-center">
+                    <img height="60" src="https://yt3.ggpht.com/ytc/AKedOLTO2XVhtyMr24Dnz6QJ-Lsj_05XHim-qMoF6PRc=s900-c-k-c0x00ffffff-no-rj" alt="">
+                    <h1 class="fw-bold">Campo Minato</h1>
                 </div>
-                <div class="col">
-                
-                        <label for="difficoltà">Difficoltà</label>
-                        <select name="difficolà" id="difficoltà">
+                <div class="col d-flex align-items-center">
+                    <label for="difficoltà" >Difficoltà:</label>
+                        <select name="difficolà" id="difficoltà" class="mx-1">
                             <option value="facile">Facile</option>
                             <option value="media">Media</option>
                             <option value="difficile">Difficile</option>
                         </select>
-                        <button id="play">play</button>
-                        
+                    <button id="play" class="d-flex align-items-center justify-content-center">play</button>
                 </div>
             </div>
         </div>
@@ -38,13 +37,13 @@
 
     <!-- griglia -->
     <main>
-        <div class="main_container mt-5">
+        <div class="main_container d-flex align-items-center">
             <div id="cells" class="d-flex flex-wrap"></div>
         </div>
     </main>
 
-    <footer class="mt-5">
-        <div class="container">
+    <footer class="d-flex align-items-center">
+        <div class="container fw-bold">
             Made with by &hearts; <a href="#">Boolean</a>
         </div>
     </footer>

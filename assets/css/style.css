@@ -2,7 +2,17 @@ header, footer{
     background-color: white;
 }
 
-header>.container{
+#difficoltà{
+    width: 200px;
+}
+
+button{
+    border-radius: 5px;
+    border: solid 1px black;
+    width: 120px;
+    height: 25px;
+}
+.container>.row{
     height: 70px;
 }
 
@@ -11,8 +21,9 @@ body{
 }
 
 .main_container{
-    width: 900px;
-    margin:0 auto
+    width: 600px;
+    margin:0 auto;
+    height: calc(100vh - 120px);
 }
 
 .cell_easy_mode{
@@ -22,6 +33,9 @@ body{
 .cell{
     border: 1px solid black;
     aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cell_normal_mode{
     width: calc(100% / 9);
@@ -32,5 +46,10 @@ body{
 }
 
 .active{
-    background-color: blue;
+    background-color: #6495ED;
+    color: white;
+}
+
+footer{
+    height: 50px;
 }

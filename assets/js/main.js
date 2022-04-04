@@ -19,7 +19,6 @@ if (difficoltà == "facile"){
         createGrid("cells", "div", "cell", "cell_hard_mode", 49)
         coloredSquare (".cell", "active")
     }
-
 }
 
 
@@ -33,8 +32,10 @@ function createGrid(selector, tagName, className, secondClassName, numeroDiffico
     divTag.classList.add(className)
     divTag.classList.add(secondClassName)
     cellsElement.append(divTag)
+    divTag.append(i)
     } 
 }
+  
 
 //funzione quando clicco sul quadrato si colora
 function coloredSquare (selector, activeClass){
@@ -50,3 +51,5 @@ for (let i = 0; i<arrayCell.length;i++){
 
 
 
+
+    
