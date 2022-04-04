@@ -9,11 +9,14 @@ console.log(difficoltà)
 
 if (difficoltà == "facile"){
     createGrid("cells", "div", "cell_easy_mode", 100)
+    coloredcells(100, "active")
     
     } else if(difficoltà == "media"){
         createGrid("cells", "div", "cell_normal_mode", 81)
+        coloredcells(81, "active")
     } else {
         createGrid("cells", "div", "cell_hard_mode", 49)
+        coloredcells(49, "active")
     }
 
     
@@ -35,14 +38,14 @@ function createGrid(selector, tagName, className, numeroDifficoltà){
 //funzione quando clicco sul quadrato si colora
 
 
-function coloredcells (lenght){
+function coloredcells (lunghezza, active_class){
     const allCells= document.querySelectorAll(".cells")
-        for(let index=0; index < length ; index++){
+        for(let index=0; index < lunghezza ; index++){
             const singlecell = cells[index]
-            console.log(singlecell)
-                
+            singlecell.addEventListener("click", function() {
+                this.classList.add(active_class)
+            })
         }
-
 }
 
 
